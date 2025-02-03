@@ -9,14 +9,17 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/svgicons/logo-small.svg">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css?_v=20250201230128">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css?_v=20250201230128">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20250201230128">
-    <link rel="stylesheet" href="css/style.min.css?_v=20250201230128">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250201230128"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20250201230128"></script>
-    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js?_v=20250201230128"></script>
-    <script defer src="js/app.min.js?_v=20250201230128"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+    <script defer src="js/app.min.js"></script>
     <title>Главная</title>
 </head>
 
@@ -39,14 +42,17 @@
                         <img class="yellow-ball" src="img/svgicons/assortment/yellow-ball.svg" alt="yellow-ball">
                     </div>
                     <header class="block-header">
-                        <h2>АССОРТИМЕНТ, УЧАСТВУЮЩИЙ В АКЦИИ</h2>
-                        <p>
+                        <h2 class="wow fadeIn" data-wow-delay="100ms">АССОРТИМЕНТ, УЧАСТВУЮЩИЙ В АКЦИИ</h2>
+                        <p class="wow fadeIn" data-wow-delay="200ms">
                             В акции принимают участие все продукты МДЖ, за исключением Синуксол-Нита и Вемелкам Солютаб. Учитывается продажа торговой марки, независимо от дозировки и фасовки.
                         </p>
-                        <p>Посмотреть каталог продукции можно на нашем сайте:</p>
+                        <p class="wow fadeIn" data-wow-delay="300ms">Посмотреть каталог продукции можно на нашем сайте:</p>
                     </header>
-                    <a href="#" class="btn">каталог</a>
-                    <div class="assortment__marquee"></div>
+                    <a href="https://pets.nita-farm.ru/catalog/" class="btn wow fadeIn" data-wow-delay="400ms">каталог</a>
+                    <div class="assortment__marquee marquee">
+                        <img src="img/assortment/marquee.png" alt="assortment-marquee">
+                        <!-- <img src="img/assortment/marquee.png" alt="assortment-marquee"> -->
+                    </div>
                     <p>Если в период действия Акции выйдет новый продукт из линейки МДЖ НИТА-ФАРМ, такой продукт автоматически включается в акцию.</p>
                 </section>
                 <section class="main-prize section">
@@ -56,38 +62,53 @@
                         <img class="blue-ball" src="img/svgicons/main-prize/blue-ball.svg" alt="blue-ball">
                     </div>
                     <div class="main-prize__phones">
-                        <picture><source srcset="img/main-prize/phone-1.webp" type="image/webp"><img src="img/main-prize/phone-1.png" alt="main-prize-phone"></picture>
-                        <picture><source srcset="img/main-prize/phone-2.webp" type="image/webp"><img src="img/main-prize/phone-2.png" alt="main-prize-phone"></picture>
-                        <picture><source srcset="img/main-prize/phone-3.webp" type="image/webp"><img src="img/main-prize/phone-3.png" alt="main-prize-phone"></picture>
+                        <img
+                            class="animate-cursor wow fadeIn"
+                            data-wow-delay="100ms"
+                            src="img/main-prize/phone-1.png"
+                            alt="main-prize-phone"
+                        >
+                        <img
+                            class="animate-cursor wow fadeIn"
+                            data-wow-delay="100ms"
+                            src="img/main-prize/phone-2.png"
+                            alt="main-prize-phone"
+                        >
+                        <img
+                            class="animate-cursor wow fadeIn"
+                            data-wow-delay="100ms"
+                            src="img/main-prize/phone-3.png"
+                            alt="main-prize-phone"
+                        >
                     </div>
                     <main class="main-prize__row">
                         <header class="block-header">
-                            <h2>ПРИМИТЕ УЧАСТИЕ В РОЗЫГРЫШЕ ГЛАВНОГО ПРИЗА</h2>
-                            <p>3 победителя выиграют Apple iPhone 16 Pro</p>
+                            <h2 class="wow fadeIn" data-wow-delay="100ms">ПРИМИТЕ УЧАСТИЕ В РОЗЫГРЫШЕ ГЛАВНОГО ПРИЗА</h2>
+                            <p class="wow fadeIn" data-wow-delay="200ms">3 победителя выиграют Apple iPhone 16 Pro</p>
                         </header>
                         <ol>
-                            <li>
+                            <li class="wow fadeIn" data-wow-delay="400ms">
                                 Совершайте покупки у официальных
                                 <br>
                                 Дистрибьюторов НИТА-ФАРМ.
                             </li>
-                            <li>Зарегистрируйтесь на сайте Акции.</li>
-                            <li>
+                            <li class="wow fadeIn" data-wow-delay="600ms">Зарегистрируйтесь на сайте Акции.</li>
+                            <li class="wow fadeIn" data-wow-delay="800ms">
                                 Подпишитесь на наш
                                 <a href="#">Telegram-канал</a>
                                 .
                             </li>
-                            <li>Выигрывайте  Apple iPhone 16 Pro.</li>
+                            <li class="wow fadeIn" data-wow-delay="1000ms">Выигрывайте  Apple iPhone 16 Pro.</li>
                         </ol>
-                        <a href="#" class="btn">регистрация в розыгрыше</a>
-                        <p>
+                        <a href="#" class="btn wow fadeIn" data-wow-delay="1200ms">регистрация в розыгрыше</a>
+                        <p class="wow fadeIn" data-wow-delay="800ms">
                             Одна регистрация равна одному шансу на участие в розыгрыше.
                             <br>
                             Один Клиент НИТА-ФАРМ может выиграть один главный приз.
                             <br>
                             Розыгрыш Apple iPhone 16 Pro пройдёт 28.04.25.
                         </p>
-                        <p>
+                        <p class="wow fadeIn" data-wow-delay="900ms">
                             Призы могут отличаться по внешнему виду от их изображений в рекламно-информационных материалах. Результаты будут опубликованы на этом сайте в разделе «Итоги розыгрыша».
                             <br>
                             <a href="#">Полные правила розыгрыша.</a>
@@ -104,7 +125,7 @@
                         <img class="grey-square" src="img/svgicons/steps/grey-square.svg" alt="grey-square">
                     </div>
                     <header class="block-header">
-                        <h2>
+                        <h2 class="wow fadeIn" data-wow-delay="200ms">
                             Этапы Акции «Побеждай с НИТА-ФАРМ»
                         </h2>
                     </header>
@@ -149,7 +170,7 @@
                             </div>
                             <img src="img/svgicons/steps/item-4.svg" alt="steps-img">
                         </article>
-                        <div class="steps__lines">
+                        <div class="steps__lines wow fadeIn" data-wow-delay="400ms">
                             <div class="steps__line"></div>
                             <div class="steps__line"></div>
                             <div class="steps__line"></div>
@@ -163,15 +184,25 @@
                         <img class="yellow-square" src="img/svgicons/results/yellow-square.svg" alt="yellow-square">
                     </div>
                     <div class="results__img">
-                        <img class="bg" src="img/svgicons/results/bg.svg" alt="bg">
-                        <picture><source srcset="img/results/phone-1.webp" type="image/webp"><img src="img/results/phone-1.png" alt=""></picture>
+                        <img
+                            class="bg wow fadeIn"
+                            data-wow-delay="0ms"
+                            src="img/svgicons/results/bg.svg"
+                            alt="bg"
+                        >
+                        <img
+                            class="wow fadeIn"
+                            data-wow-delay="300ms"
+                            src="img/results/phone-1.png"
+                            alt=""
+                        >
                     </div>
                     <div class="results__info">
                         <header class="block-header">
-                            <h2>Итоги розыгрыша</h2>
-                            <p>Акция проходит с 10.02.25 по 10.04.25, и вы успеваете принять в ней участие. Итоги розыгрыша Apple iPhone 16 Pro будут подведены 28.04.25 на этой странице.</p>
+                            <h2 class="wow fadeIn" data-wow-delay="400ms">Итоги розыгрыша</h2>
+                            <p class="wow fadeIn" data-wow-delay="500ms">Акция проходит с 10.02.25 по 10.04.25, и вы успеваете принять в ней участие. Итоги розыгрыша Apple iPhone 16 Pro будут подведены 28.04.25 на этой странице.</p>
                         </header>
-                        <a href="#" class="btn">принять участие</a>
+                        <a href="#" class="wow fadeIn" data-wow-delay="600ms">принять участие</a>
                     </div>
                 </section>
                 <section class="faq section">
@@ -384,7 +415,7 @@
                 </div>
             </div>
             <div class="footer__info-item">
-                <picture><source srcset="img/qr.webp" type="image/webp"><img src="img/qr.png" alt="qr"></picture>
+                <img src="img/qr.png" alt="qr">
                 <p>
                     Лицензия на производство лекарственных средств для ветеринарного применения
                     <br>
