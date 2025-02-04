@@ -36,24 +36,105 @@
 </header>
 
             <main class="content">
-                <section class="assortment section">
+                <section class="intro section">
                     <div class="block-figures">
-                        <img class="red-triangle" src="img/svgicons/assortment/red-triangle.svg" alt="red-triangle">
-                        <img class="yellow-ball" src="img/svgicons/assortment/yellow-ball.svg" alt="yellow-ball">
+                        <img class="bg-figures animateFromleft" src="img/svgicons/intro/bg-figures.svg" alt="bg-figures">
+                        <img
+                            class="green-ball wow fadeIn"
+                            data-wow-delay="100ms"
+                            src="img/svgicons/intro/green-ball.svg"
+                            alt="green-ball"
+                        >
+                        <img
+                            class="yellow-ball wow fadeIn"
+                            data-wow-delay="200ms"
+                            src="img/svgicons/intro/yellow-ball.svg"
+                            alt="yellow-ball"
+                        >
                     </div>
-                    <header class="block-header">
-                        <h2 class="wow fadeIn" data-wow-delay="100ms">АССОРТИМЕНТ, УЧАСТВУЮЩИЙ В АКЦИИ</h2>
-                        <p class="wow fadeIn" data-wow-delay="200ms">
-                            В акции принимают участие все продукты МДЖ, за исключением Синуксол-Нита и Вемелкам Солютаб. Учитывается продажа торговой марки, независимо от дозировки и фасовки.
-                        </p>
-                        <p class="wow fadeIn" data-wow-delay="300ms">Посмотреть каталог продукции можно на нашем сайте:</p>
+                    <div class="intro__info">
+                        <header class="intro__header">
+                            <img
+                                class="wow fadeIn"
+                                data-wow-delay="300ms"
+                                src="img/svgicons/logo-dog.svg"
+                                alt=""
+                            >
+                            <h1 class="wow fadeIn" data-wow-delay="400ms">Акция «Покупки, которые приносят призы»</h1>
+                            <p class="wow fadeIn" data-wow-delay="500ms">10 февраля 2025 года – 10 апреля 2025 года</p>
+                            <h2 class="wow fadeIn" data-wow-delay="600ms">
+                                ПОКУПАЙТЕ ВЕТЕРЕНАРНЫЕ ПРЕПАРАТЫ NITA–FARM И ВЫИГРЫВАЙТЕ IPHONE 16 PRO И ГАРАНТИРОВАННЫЕ ПРИЗЫ
+                            </h2>
+                        </header>
+                        <div class="intro__prizes">
+                            <div class="intro-prize wow fadeInUp" data-wow-delay="2200ms">
+                                <div class="intro-prize__img">
+                                    <img src="img/intro/1.png" alt="">
+                                </div>
+                                <div class="intro-prize__info">
+                                    <h3>Умный светодиодный RGB светильник</h3>
+                                    <p>
+                                        При покупке
+                                        <b>от 50 000,00 рублей</b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="intro-prize wow fadeInUp" data-wow-delay="2400ms">
+                                <div class="intro-prize__img">
+                                    <img src="img/intro/2.png" alt="">
+                                </div>
+                                <div class="intro-prize__info">
+                                    <h3>
+                                        Беспроводная колонка JBL
+                                    </h3>
+                                    <p>
+                                        При покупке
+                                        <b>от 50 000,00 рублей</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__phones">
+                        <img
+                            class="animate-cursor wow fadeIn"
+                            data-wow-delay="400ms"
+                            src="img/intro/phones-1.png"
+                            alt="main-prize-phone"
+                        >
+                        <img
+                            class="animate-cursor wow fadeIn"
+                            data-wow-delay="600ms"
+                            src="img/intro/phones-2.png"
+                            alt="main-prize-phone"
+                        >
+                        <img
+                            class="animate-cursor wow fadeIn"
+                            data-wow-delay="800ms"
+                            src="img/intro/phones-3.png"
+                            alt="main-prize-phone"
+                        >
+                        <img class="bg" src="img/svgicons/intro/bg.svg">
+                    </div>
+                </section>
+                <section class="conditions section">
+                    <div class="block-figures">
+                        <img class="yellow-square" src="img/svgicons/conditions/yellow-square.svg" alt="yellow-square">
+                    </div>
+                    <header class="block-header wow fadeIn" data-wow-delay="100ms">
+                        <h2>Условия акции</h2>
                     </header>
-                    <a href="https://pets.nita-farm.ru/catalog/" class="btn wow fadeIn" data-wow-delay="400ms">каталог</a>
-                    <div class="assortment__marquee marquee">
-                        <img src="img/assortment/marquee.png" alt="assortment-marquee">
-                        <!-- <img src="img/assortment/marquee.png" alt="assortment-marquee"> -->
-                    </div>
-                    <p>Если в период действия Акции выйдет новый продукт из линейки МДЖ НИТА-ФАРМ, такой продукт автоматически включается в акцию.</p>
+                    <main class="conditions__row">
+                        <h3 class="wow fadeIn" data-wow-delay="200ms">Покупайте препараты НИТА-ФАРМ PETS и получайте гарантированные призы.</h3>
+                        <p class="wow fadeIn" data-wow-delay="300ms">
+                            Новые препараты из линейки МДЖ НИТА-ФАРМ, выпущенные во время акции, также учитывается.
+                        </p>
+                        <p class="wow fadeIn" data-wow-delay="400ms">
+                            Учитываются закупки только у
+                            <a href="#">официальных Дистрибьюторов</a>
+                            . Закупки у разных Дистрибьюторов не суммируются.
+                        </p>
+                    </main>
                 </section>
                 <section class="main-prize section">
                     <div class="block-figures">
@@ -62,24 +143,9 @@
                         <img class="blue-ball" src="img/svgicons/main-prize/blue-ball.svg" alt="blue-ball">
                     </div>
                     <div class="main-prize__phones">
-                        <img
-                            class="animate-cursor wow fadeIn"
-                            data-wow-delay="100ms"
-                            src="img/main-prize/phone-1.png"
-                            alt="main-prize-phone"
-                        >
-                        <img
-                            class="animate-cursor wow fadeIn"
-                            data-wow-delay="100ms"
-                            src="img/main-prize/phone-2.png"
-                            alt="main-prize-phone"
-                        >
-                        <img
-                            class="animate-cursor wow fadeIn"
-                            data-wow-delay="100ms"
-                            src="img/main-prize/phone-3.png"
-                            alt="main-prize-phone"
-                        >
+                        <img class="animate-cursor" src="img/main-prize/phone-1.png" alt="main-prize-phone">
+                        <img class="animate-cursor" src="img/main-prize/phone-2.png" alt="main-prize-phone">
+                        <img class="animate-cursor" src="img/main-prize/phone-3.png" alt="main-prize-phone">
                     </div>
                     <main class="main-prize__row">
                         <header class="block-header">
@@ -114,6 +180,26 @@
                             <a href="#">Полные правила розыгрыша.</a>
                         </p>
                     </main>
+                </section>
+                <section class="assortment section">
+                    <div class="block-figures">
+                        <img class="pink-square" src="img/svgicons/assortment/pink-square.svg" alt="pink-square">
+                        <img class="yellow-ball" src="img/svgicons/assortment/yellow-ball.svg" alt="yellow-ball">
+                        <img class="green-ball" src="img/svgicons/assortment/green-ball.svg" alt="green-ball">
+                    </div>
+                    <header class="block-header">
+                        <h2 class="wow fadeIn" data-wow-delay="100ms">АССОРТИМЕНТ, УЧАСТВУЮЩИЙ В АКЦИИ</h2>
+                        <p class="wow fadeIn" data-wow-delay="200ms">
+                            В акции принимают участие все продукты МДЖ, за исключением Синуксол-Нита и Вемелкам Солютаб. Учитывается продажа торговой марки, независимо от дозировки и фасовки.
+                        </p>
+                        <p class="wow fadeIn" data-wow-delay="300ms">Посмотреть каталог продукции можно на нашем сайте:</p>
+                    </header>
+                    <a href="https://pets.nita-farm.ru/catalog/" class="btn wow fadeIn" data-wow-delay="400ms">каталог</a>
+                    <div class="assortment__marquee marquee">
+                        <img src="img/assortment/marquee.png" alt="assortment-marquee">
+                        <!-- <img src="img/assortment/marquee.png" alt="assortment-marquee"> -->
+                    </div>
+                    <p>Если в период действия Акции выйдет новый продукт из линейки МДЖ НИТА-ФАРМ, такой продукт автоматически включается в акцию.</p>
                 </section>
                 <section class="steps section">
                     <div class="block-figures">
@@ -190,12 +276,8 @@
                             src="img/svgicons/results/bg.svg"
                             alt="bg"
                         >
-                        <img
-                            class="wow fadeIn"
-                            data-wow-delay="300ms"
-                            src="img/results/phone-1.png"
-                            alt=""
-                        >
+                        <img class="animate-cursor" src="img/results/phone-1.png" alt="">
+                        <img class="animate-cursor" src="img/results/phone-2.png" alt="">
                     </div>
                     <div class="results__info">
                         <header class="block-header">
