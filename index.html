@@ -166,7 +166,7 @@
                             </li>
                             <li class="wow fadeIn" data-wow-delay="1000ms">Выигрывайте  Apple iPhone 16 Pro.</li>
                         </ol>
-                        <a href="#" class="btn wow fadeIn" data-wow-delay="1200ms">регистрация в розыгрыше</a>
+                        <a href="#" class="btn btn-register wow fadeIn" data-wow-delay="1200ms">регистрация в розыгрыше</a>
                         <p class="wow fadeIn" data-wow-delay="800ms">
                             Одна регистрация равна одному шансу на участие в розыгрыше.
                             <br>
@@ -192,6 +192,7 @@
                         <p class="wow fadeIn" data-wow-delay="200ms">
                             В акции принимают участие все продукты МДЖ, за исключением Синуксол-Нита и Вемелкам Солютаб. Учитывается продажа торговой марки, независимо от дозировки и фасовки.
                         </p>
+                        <br>
                         <p class="wow fadeIn" data-wow-delay="300ms">Посмотреть каталог продукции можно на нашем сайте:</p>
                     </header>
                     <a href="https://pets.nita-farm.ru/catalog/" class="btn wow fadeIn" data-wow-delay="400ms">каталог</a>
@@ -505,12 +506,139 @@
                 </p>
             </div>
         </div>
-        <div class="footer__copy">© 2025 НИТА-ФАРМ. Все права защищены. Дизайн сайта —
-            <b>Текарт</b>, разработка —
-            <b>Астониа</b>.
+        <div class="footer__copy">
+            © 2025 НИТА-ФАРМ. Все права защищены. Дизайн сайта —
+            <b>Текарт</b>
+            , разработка —
+            <b>Астониа</b>
+            .
         </div>
     </div>
 </footer>
+<div class="dialogbox dialogbox-register">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <div class="dialogbox__close"></div>
+            <form action="#">
+                <h2>РЕГИСТРАЦИЯ УЧАСТНИКОВ АКЦИИ</h2>
+                <div class="inputs">
+                    <label>
+                        <p>ФИО *</p>
+                        <input
+                            type="text"
+                            name="name"
+                            class="input"
+                            placeholder="Введите Ваше имя"
+                            required
+                        >
+                    </label>
+                    <label>
+                        <p>Название организации участника Акции*</p>
+                        <input
+                            type="text"
+                            name="company"
+                            class="input"
+                            placeholder="Введите название Вашей компании"
+                            required
+                        >
+                    </label>
+                    <label>
+                        <p>Название дистрибьютора, у которого была произведена закупка продукции нита-фарм*</p>
+                        <input
+                            type="text"
+                            name="distributor"
+                            class="input"
+                            placeholder="Введите название дистрибьютера"
+                            required
+                        >
+                    </label>
+                    <label>
+                        <p>ИНН организации участника Акции*</p>
+                        <input
+                            type="text"
+                            name="inn"
+                            class="input"
+                            placeholder="Введите название дистрибьютера"
+                            required
+                        >
+                    </label>
+                    <label>
+                        <p>Телефон*</p>
+                        <input
+                            type="tel"
+                            name="phone"
+                            class="input"
+                            placeholder="Введите Ваш контактный телефон"
+                        >
+                    </label>
+                    <label>
+                        <p>Телефон*</p>
+                        <input
+                            type="email"
+                            name="email"
+                            class="input"
+                            placeholder="Введите Ваш контактный email  "
+                        >
+                    </label>
+                    <label>
+                        <p>ФИО менеджера Дистрибьютора, который направил Вас на страницу*</p>
+                        <input
+                            type="text"
+                            name="inn"
+                            class="input"
+                            placeholder="Введите ФИО менеджера"
+                            required
+                        >
+                    </label>
+                </div>
+                <div class="hint">* обязательные поля</div>
+                <h3>
+                    НАМ ВАЖНА ВАША ОБРАТНАЯ СВЯЗЬ
+                </h3>
+                <div class="inputs">
+                    <label>
+                        <p>Откуда вы узнали об акции</p>
+                        <input
+                            type="text"
+                            name="name"
+                            class="input"
+                            placeholder="Введите текст об источнике информации"
+                        >
+                    </label>
+                    <label>
+                        <p>Оцените акцию по 10-бальной шкале</p>
+                        <input
+                            type="text"
+                            name="company"
+                            class="input"
+                            placeholder="Введите цифру от 1 до 10"
+                            required
+                        >
+                    </label>
+                </div>
+                <label>
+                    <p>Ваши пожелания</p>
+                    <textarea name="comment" placeholder="Введите текст сообщения"></textarea>
+                </label>
+                <label class="checkbox form-conf">
+                    <input type="checkbox" class="custom-checkbox" checked="">
+                    <p>
+                        Я ознакомился(-ась) с Правилами акции.
+                    </p>
+                </label>
+                <label class="checkbox form-conf">
+                    <input type="checkbox" class="custom-checkbox" checked="">
+                    <p>
+                        Даю согласие на обработку моих персональных данных, участие в Акции и получение информации
+
+                        (в том числе рекламной) от ООО «НИТА - ФАРМ».
+                    </p>
+                </label>
+                <button type="submit" class="btn">Отправить форму</button>
+            </form>
+        </div>
+    </div>
+</div>
 
         </div>
     </body>
