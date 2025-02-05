@@ -1079,6 +1079,10 @@ body {
   .faq__slide {
     backdrop-filter: blur(25px);
   }
+  .results .pink-square {
+    width: 200px;
+    top: 100px;
+  }
 }
 @media only screen and (max-width: 1600px) {
   .intro__header {
@@ -1149,21 +1153,76 @@ body {
     width: 400px;
   }
 }
+@media only screen and (max-width: 1150px) {
+  .section {
+    padding: 60px 0px;
+  }
+  .intro__header {
+    max-width: 100%;
+  }
+  .intro__header h1,
+  .intro__header p {
+    max-width: 50%;
+  }
+  .results .pink-square {
+    right: 0%;
+    top: 60px;
+    width: 200px;
+  }
+  .main-prize__row {
+    max-width: 100%;
+  }
+  .main-prize__row .btn {
+    margin: 0 auto 50px;
+  }
+  .main-prize__row .main-prize__header,
+  .main-prize__row ol {
+    max-width: 50%;
+  }
+  .main-prize__row ol {
+    margin-bottom: 70px;
+  }
+}
 @media only screen and (max-width: 992px) {
+  .main-prize__row ol {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
   .inputs {
     grid-template-columns: none;
   }
   .intro__header {
     max-width: 100%;
+    display: grid;
+    grid-template-areas: "img h1" "img p" "h2 h2";
+    grid-template-columns: 200px 1fr;
+    gap: 0px 40px;
+    grid-template-rows: 100px 60px 1fr;
+  }
+  .intro__header img {
+    height: 100%;
+  }
+  .intro__header h1 {
+    grid-area: h1;
+    margin-bottom: 0px;
+  }
+  .intro__header h1 + p {
+    grid-area: p;
+    margin-bottom: 0px;
+  }
+  .intro__header img {
+    grid-area: img;
+    margin-bottom: 0px;
   }
   .intro__header h2 {
+    grid-area: h2;
     margin-top: 100%;
   }
   .intro__phones {
     left: 15px;
     right: 15px;
     width: 100%;
-    top: 400px;
+    top: 250px;
   }
   h1 {
     font-weight: 400;
@@ -1255,7 +1314,11 @@ body {
     top: 200px;
   }
   .results {
+    padding-top: 0px;
     flex-wrap: wrap;
+  }
+  .section {
+    padding: 60px 0px;
   }
   .faq__question,
   .faq__answer {
@@ -1286,8 +1349,41 @@ body {
   }
 }
 @media only screen and (max-width: 768px) {
+  .intro__header {
+    max-width: 100%;
+    display: grid;
+    grid-template-areas: "img h1" "img p" "h2 h2";
+    grid-template-columns: 200px 1fr;
+    gap: 0px 40px;
+    grid-template-rows: 140px 60px 1fr;
+  }
+  .intro__header img {
+    height: 100%;
+  }
+  .intro__header h1 {
+    grid-area: h1;
+    margin-bottom: 0px;
+  }
+  .intro__header h1 + p {
+    grid-area: p;
+    margin-bottom: 0px;
+  }
+  .intro__header img {
+    grid-area: img;
+    margin-bottom: 0px;
+  }
+  .intro__header h2 {
+    grid-area: h2;
+    margin-top: 100%;
+  }
+  .intro__phones {
+    left: 15px;
+    right: 15px;
+    width: 100%;
+    top: 250px;
+  }
   .main-prize__phones {
-    top: 400px;
+    top: 250px;
   }
   .footer__info {
     flex-wrap: wrap;
@@ -1352,6 +1448,35 @@ body {
   .dialogbox__inner {
     padding: 0px;
   }
+  .intro__header {
+    max-width: 100%;
+    display: block;
+  }
+  .intro__header img {
+    height: 100%;
+  }
+  .intro__header h1 {
+    grid-area: h1;
+    margin-bottom: 32px;
+  }
+  .intro__header h1 + p {
+    grid-area: p;
+    margin-bottom: 40px;
+  }
+  .intro__header img {
+    grid-area: img;
+    margin-bottom: 40px;
+  }
+  .intro__header h2 {
+    grid-area: h2;
+    margin-top: 100%;
+  }
+  .intro__phones {
+    left: 15px;
+    right: 15px;
+    width: 100%;
+    top: 325px;
+  }
   h1 {
     font-weight: 400;
     font-size: 36px;
@@ -1383,13 +1508,16 @@ body {
     font-size: 14px;
   }
   .main-prize__phones {
-    top: 300px;
+    top: 225px;
   }
   .results .block-figures {
     display: none;
   }
   .section {
     padding: 70px 0px;
+  }
+  .results {
+    padding-top: 0px;
   }
   .main-prize__row .btn {
     font-size: 16px;
@@ -1407,11 +1535,25 @@ body {
   .intro {
     padding-top: 0px;
   }
+  .intro .green-ball {
+    left: 60%;
+  }
+  .intro .yellow-ball {
+    left: 50%;
+    top: 100px;
+  }
+  .intro__header > img {
+    width: 130px;
+    height: auto;
+  }
   .intro__header h2 {
     margin-top: 110%;
   }
-  .intro__phones {
-    top: 450px;
+  .assortment__marquee {
+    height: 220px;
+  }
+  .assortment__marquee img {
+    height: 100%;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -1422,10 +1564,13 @@ body {
     width: 100%;
   }
   .main-prize__phones {
-    top: 300px;
+    top: 200px;
     width: 100%;
   }
   .main-prize__phones img:nth-child(2) {
     right: 0px;
+  }
+  .intro__phones {
+    top: 375px;
   }
 }
